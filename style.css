@@ -1,21 +1,26 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+    font-family: ;
 }
 
-img{
+/* img {
     width: 80%;
     border-radius: 10px;
+} */
+
+
+#round {
+    border-radius: 50%;
 }
 
-.hero-image{
+.hero-image {
     background-image: url("./images/bakingheader.png");
-    height: 340px ;
+    height: 340px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.hero-text{
+.hero-text {
     color: rgb(240, 202, 220);
     position: absolute;
     text-align: center;
@@ -24,7 +29,7 @@ img{
     font-size: 4rem;
 }
 
-.four-column{
+.one-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
@@ -33,11 +38,21 @@ img{
     margin-top: 40px;
 }
 
-.info{
+.two-column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.info {
     font-size: 1.25em;
 }
 
-.three-column{
+.three-column {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px;
@@ -47,11 +62,15 @@ img{
     margin-bottom: 50px;
 }
 
-.card{
+.card {
     background-color: rgb(240, 202, 220);
 }
 
-.card-text{
+.card-text {
     text-align: center;
     color: rgb(255, 202, 215)
+}
+
+.card img{
+    width: 100%;
 }
